@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+h1 {
+  line-height: 0.5;
+
+  color: white;
+
+  font-size: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+
+  width: 250px;
+  height: auto;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  background-color: blue;
+}
+img {
+  width: 80%;
+}
+
+.admin {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  width: 400px;
+  height: 210px;
+
+  background-color: brown;
+
+  border-radius: 20px;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:disabled {
+  background-color: #eee;
+  color: #888;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:not(:placeholder-shown) {
+  border-color: #28a745; 
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Основные стили кнопки */
+.addCard {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+}
+
+/* Стили для кнопки при наведении */
+.addCard:hover {
+  background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+/* Стили для кнопки при активации (нажатии) */
+.addCard:active {
+  background-color: #004080; /* Цвет фона при активации */
+}
+
+/* Стили для неактивной кнопки */
+.addCard:disabled {
+  background-color: #ccc; /* Цвет фона для неактивной кнопки */
+  color: #666; /* Цвет текста для неактивной кнопки */
+  cursor: not-allowed;
+}
